@@ -44,40 +44,55 @@ body {
     color: var(--nav-color);
     text-decoration: none;
   }
-  
-  a:hover {
-    color: #ff6347;
-  }
-  
-  header {
-    
-    
-    background: #1e1e1e;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
+ 
+/* Base styles */
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  padding: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #ddd;
+  background-color: #555; /* Added background color change on hover */
+  padding: 5px 10px; /* Added padding for a button-like effect */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    
   }
-  
+
   nav li {
-    margin: 0 15px;
+    padding: 10px 0;
+    
   }
-  
-  nav a {
-    padding: 10px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ff6347;
-  }
+}
+
+
 
  h2 {
     margin-top: 40px;
@@ -226,10 +241,9 @@ margin: auto;
   /* Tech skills grid */
 
   .techskill-container {
-  max-width: 1200px;
- margin: auto;
+  
 display: flex;
-justify-content: start;
+justify-content: center;
 gap: 20px;
          
   }
