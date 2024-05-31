@@ -1,0 +1,345 @@
+
+:root {
+  --color-primary: #2584ff;       /* Blue - Works well in dark themes */
+  --color-secondary: #00d9ff;     /* Light Cyan - Still stands out in dark themes */
+  --color-accent: #ff3400;        /* Bright Orange - Provides contrast */
+  --color-headings: #ffffff;      /* White - High contrast for headings */
+  --color-body: #c0c0c0;          /* Light Grey - Better readability for body text */
+  
+  /* Complementary Colors */
+  --color-complementary1: #ffc400;  /* Bright Yellow - Complement to blue */
+  --color-complementary2: #00ff84;  /* Bright Green - Goes well with cyan */
+  --color-complementary3: #ff00b3;  /* Magenta - Contrasts well with orange */
+  --color-background: #121212;      /* Dark background for the theme */
+  --color-card-background: #1e1e1e; /* Slightly lighter dark for cards/sections */
+}
+
+/* Typograpy */
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: Roboto
+  Static;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+  background: var(--color-card-background);
+  
+}
+
+h1, 
+h2, 
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height:1.1 ;
+  
+}
+
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+ 
+}
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+font-size: 2.4rem;
+  }
+}
+
+/* Navbar */
+
+header {
+  background-color: var(--color-background);
+  padding: 10px 0;
+  color: var(--color-headings);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  color: var(--color-body);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  
+    width: 100%;
+  }
+
+  .nav-list li {
+   
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}
+
+/* Hero */
+
+.hero__content {
+  text-align: center;
+  
+}
+
+.block__heading {
+  font-size: 4rem;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: var(--color-body);
+  letter-spacing: 1px;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+   
+    text-align: left;
+    align-self: center;
+  }
+  .block__heading {
+    margin-left: 20px;
+  }
+  .hero__tagline {
+    margin-left: 20px;
+  }
+}
+
+/* About */
+.about {
+  margin: 20px;
+}
+
+.span__text {
+  font-family: bold;
+  color: var(--color-complementary3);
+}
+
+/* brand__logos */
+
+.brand__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  margin-top: 50px;
+  }
+
+.brand__logos img {
+  width: 100px;
+}
+
+.brand__logos img:hover {
+  transform: scale(1.1);
+  
+}
+
+/* experience */
+.experience-container {
+  border: 1px solid rgba(128, 128, 128, 0.204);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+ 
+}
+
+.experience-container:hover {
+  box-shadow: 5px 5px 10px rgb(233, 92, 53),
+  2px 2px 2px rgba(223, 92, 31, 0.9);
+    }
+
+
+.imge-exp {
+  width: 150px;
+}
+
+.text p {
+  color: var(--color-complementary1);
+  line-height: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+   
+  .grid-container {
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    height: 100dvh;
+  }
+ 
+}
+
+/* cards */
+.grid-skill-tech {
+  margin-top: 100px;
+}
+.skill-tech {
+  /* border: 1px solid rgba(128, 128, 128, 0.301); */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+ 
+    }
+.skill-tech  a {
+  color: var(--color-complementary2)
+}
+#Mock-up {
+  color: var(--color-complementary1);
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-skill-tech {
+ 
+    margin-top: 600px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: repeat(2, 400x);
+    grid-template-columns: repeat(3, 400px);
+          }
+         
+}
+/* Contact Social media */
+.contact-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 50px;
+  
+}
+.social-icon {
+  width: 150px;
+  border-radius: 8px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .contact-social-media {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .social-icon {
+    width: 100px;
+    border-radius: 8px;
+  }
+}
+
+footer {
+ 
+  display: flex;
+ flex-direction: column;
+align-items: center;
+ justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+ margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  footer {
+ margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.h3_align {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--color-complementary2);
+}
+
+
+
+
+
+
+
+
+
+

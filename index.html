@@ -3,378 +3,349 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thyagaraja M - Portfolio</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#section-about">About</a></li>
           <li><a href="#section-experience">Experience</a></li>
           <li><a href="#section-tech">Tech Skills</a></li>
-          <li><a href="#section-projects">Projects</a></li>
+          <li><a href="#section-project">Projects</a></li>
           <li><a href="#section-contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Hero content -->
-
-    <section id="home">
-      <div class="hero-content">
-        <h1>3D Artist + Frontend Developer</h1>
-        <h6>
-          "This website is still under construction. Progressive features and
-          functions will be added soon."
-        </h6>
-
-        <img src="./images/Hero-min.png" alt="front-end" />
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">3D Artist + Frontend Developer</h1>
+          <p class="hero__tagline">Designing-Testing-Deploying & Maintaining</p>
+          <a href="#" class="btn btn--accent btn--stretched"></a>
+        </header>
+        <img class="hero__image" src="./images/Hero-min.png" alt="" />
       </div>
     </section>
 
-    <!-- Hero content -->
-
     <!-- About -->
-    <section class="about-section" id="about">
-      <h2 id="section-about">About</h2>
-
+    <h3 id="section-about" class="h3_align">About</h3>
+    <div class="about">
       <p>
         I'm a 3D artist and Frontend Developer with over 12 years of experience.
         My background spans various creative disciplines, including product
         design, architecture, interior design, thematic environments, lighting,
         exhibitions, and pavilion design.<br /><br />
 
-        I'm passionate about leveraging my skills to create a user-friendly web
-        application for home design. This project combines my expertise in both
-        3D art and front-end development. Users will be able to select products
-        or browse by category to explore various design options and visualize
-        them within a 3D environment. I'm currently in the learning phase of
-        using React and Three.js to bring this concept to life.
+        I'm passionate about leveraging my skills to create a
+        <span class="span__text"> user-friendly web application </span> for home
+        design. This project combines my expertise in both 3D art and front-end
+        development. Users will be able to select products or browse by category
+        to explore various design options and visualize them within a 3D
+        environment. I'm currently in the learning phase of using React and
+        Three.js to bring this concept to life.
       </p>
+    </div>
+    <!-- badges -->
 
-      <!-- Brands-Logos -->
-      <div class="logo">
-        <div>
-          <img
-            src="https://seeklogo.com/images/1/3ds-max-logo-4C228D4A3D-seeklogo.com.png"
-            alt="3ds max"
-          />
-        </div>
+    <div class="brand__logos">
+      <img
+        src="https://seeklogo.com/images/1/3ds-max-logo-4C228D4A3D-seeklogo.com.png"
+        alt="3ds max"
+      />
 
-        <img
-          src="https://seeklogo.com/images/V/v-ray-logo-DF91C4C99D-seeklogo.com.png"
-          alt="vray"
-        />
-        <img
-          src="https://seeklogo.com/images/A/adobe-photoshop-cc-logo-CBD0AAA3A7-seeklogo.com.png"
-          alt="photoshop"
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOS8K3FEBeOukwxcHBDAMv1iLUOhuDeHd5CQK09qOMu_44e9iUcUuPD3_AnBwRvCpz7yQ&usqp=CAU"
-          alt="blender"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
-          alt="javascript"
-        />
-        <img
-          src="https://cdn.worldvectorlogo.com/logos/react-1.svg"
-          alt="React"
-        />
-        <img
-          src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png"
-          alt="three.js"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
-          alt="css"
-        />
-        <img
-          src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
-          alt="html"
-        />
-        <img
-          src="https://seeklogo.com/images/A/autocad-logo-69326D7728-seeklogo.com.png"
-          alt="AutoCAD"
-        />
-        <img
-          src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-          alt="git"
-        />
+      <img
+        src="https://seeklogo.com/images/V/v-ray-logo-DF91C4C99D-seeklogo.com.png"
+        alt="vray"
+      />
+      <img
+        src="https://seeklogo.com/images/A/adobe-photoshop-cc-logo-CBD0AAA3A7-seeklogo.com.png"
+        alt="photoshop"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOS8K3FEBeOukwxcHBDAMv1iLUOhuDeHd5CQK09qOMu_44e9iUcUuPD3_AnBwRvCpz7yQ&usqp=CAU"
+        alt="blender"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+        alt="javascript"
+      />
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/react-1.svg"
+        alt="React"
+      />
+      <img
+        src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png"
+        alt="three.js"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+        alt="css"
+      />
+      <img
+        src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
+        alt="html"
+      />
+      <img
+        src="https://seeklogo.com/images/A/autocad-logo-69326D7728-seeklogo.com.png"
+        alt="AutoCAD"
+      />
+      <img
+        src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+        alt="git"
+      />
 
-        <img
-          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-          alt="github"
-        />
-        <img
-          src="https://www.1min30.com/wp-content/uploads/2017/03/WordPress-Logo-1.jpg"
-          alt="wordpress"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/020/168/960/small/seo-search-engine-logo-with-magnifying-glass-and-arrow-vector.jpg"
-          alt="seo"
-        />
-      </div>
-    </section>
-    <!-- Logo -->
-
-    <!-- Experience -->
-    <h2 id="section-experience">Experience</h2>
-    <div class="exp-container">
-      <!-- Vega design -->
-      <div class="experience-card">
-        <div class="logo-container">
+      <img
+        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+        alt="github"
+      />
+      <img
+        src="https://www.1min30.com/wp-content/uploads/2017/03/WordPress-Logo-1.jpg"
+        alt="wordpress"
+      />
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/020/168/960/small/seo-search-engine-logo-with-magnifying-glass-and-arrow-vector.jpg"
+        alt="seo"
+      />
+    </div>
+    <h3 id="section-experience" class="h3_align">Experience</h3>
+    <div class="grid-container">
+      <div class="experience-container">
+        <div class="image-container">
           <a href="https://vegadesign.netlify.app/" target="_blank">
-            <img src="./images/vega design.png" alt="Vega Design"
-          /></a>
-        </div>
-
-        <div class="content-container">
-          <h3>Vega Design</h3>
-
-          <p>Position</p>
-          <br />
-          <p class="Position">3d Artist + Front-End Developer</p>
-          <p class="duration">Jan 2023 - Present (1 year 3 months)</p>
-          <br />
-          <p>
-            Managed projects with comprehensive design solutions tailored for
-            clients, including 3D design and design development. Delivered
-            design presentations, rendered images, and drafted work in line with
-            set deadlines. Created and managed the Vega Design website,
-            overseeing and implementing frontend development tasks.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vega design -->
-
-      <!-- Lowes -->
-      <div class="experience-card">
-        <div class="logo-container">
-          <a href="https://lowes.co.in/" target="_blank">
-            <img src="./images/lowes.png" alt="Lowes"
-          /></a>
-        </div>
-
-        <div class="content-container">
-          <h3>Eteam</h3>
-          <p>Client Lowes India</p>
-          <br />
-          <p>Position</p>
-          <br />
-          <p class="Position">3d Artist</p>
-          <p class="duration">Sep 2021 - Nov 2022 (1 year 3 months)</p>
-          <br />
-
-          <p>
-            Creating product base images of Interior, Paint visualization,
-            blinds, flooring, batch sequence rendering by using max Script.
-            Rendering & Photoshop Automation, Lighting, texturing. work.
-          </p>
-        </div>
-      </div>
-      <!-- Lowes -->
-
-      <!-- Expo -->
-      <div class="experience-card">
-        <div class="logo-container">
-          <a href="https://www.expo2020dubai.com/" target="_blank">
-            <img src="./images/expo2020.png" alt="Dubai expo"
-          /></a>
-        </div>
-
-        <div class="content-container">
-          <h3>Dubai Expo 2020</h3>
-          <p>Position</p>
-          <br />
-          <p class="Position">3d Designer</p>
-          <p class="duration">Aug 2019 - May 2020 (10 months)</p>
-          <br />
-          <p>
-            Concept design, design development, 3D modeling of pavilion, CAD
-            Drafting, Theming & Lighting design. design and developing of
-            Graphical images & signage
-          </p>
-        </div>
-      </div>
-      <!-- IMG -->
-      <div class="experience-card">
-        <div class="logo-container">
-          <a href="https://www.imgworlds.com/" target="_blank">
             <img
-              src="https://dib.ae/images/default-source/offers/epp/img520x520-16.jpg?sfvrsn=3228e040_2"
-              alt="Dubai expo"
-          /></a>
-        </div>
-
-        <div class="content-container">
-          <h3>IMG Worlds of Adventure - Dubai</h3>
-          <p>Position</p>
-          <br />
-          <p class="Position">3d Designer</p>
-          <p class="duration">Nov 2013 - Jun 2017 (3 years 8 months)</p>
-          <br />
-          <p>
-            Designing and producing working drawings for the project. 3D
-            modeling of pavilion, 2d CAD Drafting, Theming & Lighting design.
-            design and developing of Graphical images & signage
-          </p>
-        </div>
-      </div>
-      <!-- IMG -->
-      <!-- Let -->
-      <div class="experience-card">
-        <div class="logo-container">
-          <a href="https://letdesignlighting.com/" target="_blank">
-            <img src="./images/Let.png" alt="Dubai expo"
-          /></a>
-        </div>
-
-        <div class="content-container">
-          <h3>LET Lighting Design - Dubai</h3>
-          <p>Position</p>
-          <br />
-          <p class="Position">Lighting Designer</p>
-          <p class="duration">Jun 2012 - Nov 2013 (1 year 6 months)</p>
-          <br />
-          <p>
-            Creating lighting working drawings, concept design, presentation,
-            all kinds of lighting, Architectural, Interior lighting design, 3d
-            modeling and rendering
-          </p>
-        </div>
-      </div>
-      <!-- Let -->
-      <!-- Cadbury -->
-      <div class="experience-card">
-        <div class="logo-container">
-          <a
-            href="https://www.mondelezinternational.com/india/"
-            target="_blank"
-          >
-            <img
-              src="https://i2-prod.mirror.co.uk/incoming/article21944174.ece/ALTERNATES/s1200c/0_Cadbury-logo.jpg"
+              class="imge-exp"
+              src="./images/vega design.png"
               alt="Vega Design"
           /></a>
         </div>
+        <p class="work-text">
+          Managed projects with comprehensive design solutions tailored for
+          clients, including 3D design and design development. Delivered design
+          presentations, rendered images, and drafted work in line with set
+          deadlines. Created and managed the Vega Design website, overseeing and
+          implementing frontend development tasks.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>3D Artist/Frontend-Developer</p>
+          <h3>Duration</h3>
+          <p>Jan 2023 - Present (1 year 3 months)</p>
+        </div>
+      </div>
+      <!-- Lowes -->
+      <div class="experience-container">
+        <div class="image-container">
+          <a href="https://lowes.co.in/" target="_blank">
+            <img class="imge-exp" src="./images/lowes.png" alt="lowes "
+          /></a>
+        </div>
+        <p class="work-text">
+          Creating product base images of Interior, Paint visualization, blinds,
+          flooring, batch sequence rendering by using max Script. Rendering &
+          Photoshop Automation, Lighting, texturing.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>3D Artist</p>
+          <h3>Duration</h3>
+          <p>Sep 2021 - Nov 2022 (1 year 3 months)</p>
+        </div>
+      </div>
+      <!-- Expo2020 -->
+      <div class="experience-container">
+        <div class="image-container">
+          <a href="https://vegadesign.netlify.app/" target="_blank">
+            <img class="imge-exp" src="./images/expo2020.png" alt="Vega Design"
+          /></a>
+        </div>
+        <p class="work-text">
+          Concept design, design development, 3D modeling of pavilion, CAD
+          Drafting, Theming & Lighting design. design and developing of
+          Graphical images & signage.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>3d Designer</p>
+          <h3>Duration</h3>
+          <p>Aug 2019 - May 2020 (10 months)</p>
+        </div>
+      </div>
+      <!-- IMG -->
+      <div class="experience-container">
+        <div class="image-container">
+          <a href="https://www.imgworlds.com/" target="_blank">
+            <img
+              class="imge-exp"
+              src="https://dib.ae/images/default-source/offers/epp/img520x520-16.jpg?sfvrsn=3228e040_2"
+              alt="Vega Design"
+          /></a>
+        </div>
+        <p class="work-text">
+          Designing and producing working drawings for the project. 3D modeling
+          of pavilion, 2d CAD Drafting, Theming & Lighting design.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>3D Designer</p>
+          <h3>Duration</h3>
+          <p>Nov 2013 - Jun 2017 (3 years 8 months)</p>
+        </div>
+      </div>
+      <!-- Let Design -->
+      <div class="experience-container">
+        <div class="image-container">
+          <a href="https://letdesignlighting.com/" target="_blank">
+            <img class="imge-exp" src="./images/Let.png" alt="Vega Design"
+          /></a>
+        </div>
+        <p class="work-text">
+          Drawing lighting drawings, concept design, presentation, all kinds of
+          lighting, Architectural, Interior lighting design, 3d modeling and
+          rendering.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>Lighting Designer</p>
+          <h3>Duration</h3>
+          <p>Jun 2012 - Nov 2013 (1 year 6 months)</p>
+        </div>
+      </div>
 
-        <div class="content-container">
-          <h3>Cadbury India</h3>
+      <!-- cadbury -->
 
-          <p>Position</p>
-          <br />
-          <p class="Position">Manufacturing Associate</p>
-          <p class="duration">Jan 2005 - Dec 2008 (4 years)</p>
-          <br />
-          <p>
-            Monitoring production Line.technical Manufacturing and Production.
-            Operting High-end Machines. follwoing SOP & GMP. Ensuring standard
-            documentation of Production unit.
-          </p>
+      <div class="experience-container">
+        <div class="image-container">
+          <a href="" target="_blank">
+            <img
+              class="imge-exp"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Cadbury_logo_new.jpg"
+              alt="Vega Design"
+          /></a>
+        </div>
+        <p class="work-text">
+          Monitoring production Line.technical Manufacturing and Production.
+          Operting High-end Machines. follwoing SOP & GMP. Ensuring standard
+          documentation of Production unit.
+        </p>
+        <div class="text">
+          <h3>Position</h3>
+          <p>Manufacturing Associate</p>
+          <h3>Duration</h3>
+          <p>Jan 2005 - Dec 2008 (4 years)</p>
         </div>
       </div>
     </div>
 
-    <!-- cadbury -->
+    <!-- cards skill -->
 
-    <!-- Tech skill -->
-    <h2 id="section-tech">Tech skill</h2>
-    <div class="tech-container">
-      <ul>
-        <a
-          href="https://sites.google.com/view/thyaga/3d-modeling"
-          target="_blank"
-          ><li>3D Modeling</li></a
-        >
-        <a
-          href="https://sites.google.com/view/thyaga/3ds-max-vray"
-          target="_blank"
-          ><li>3d rendering</li></a
-        >
-        <li>Texturing</li>
-        <li>Shaders</li>
-        <li>Lighting</li>
-        <a href="https://sites.google.com/view/thyaga/project" target="_blank"
-          ><li>architecture & Interior Design</li></a
-        >
-        <li>AutoCAD Drafting</li>
-        <li>Photoshop post-production</li>
-        <li>Front-End Developer</li>
-        <li>HTML & CSS</li>
-        <li>Javascript</li>
-        <li>React</li>
-        <li>Three.js</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </div>
-
-    <!--  Projects-->
-    <h2 id="section-projects">Projects</h2>
-    <div class="tech-container">
-      <ul>
-        <a href="https://vegadesign.netlify.app/" target="_blank"
-          ><li>Vega Design website</li></a
-        >
-        <a href="https://vegatranslate.netlify.app/" target="_blank"
-          ><li>Vega Translation website</li></a
-        >
-        <a href="https://github.com/thyagarajsalome" target="_blank"
-          ><li>GitHub</li></a
-        >
-        <a
-          href="https://github.com/thyagarajsalome/Project-04-13"
-          target="_blank"
-          ><li>Javascript</li></a
-        >
-        <a href="images\Web Application- Concept design.webp" target="_blank"
-          ><li>Mock-up Web application</li></a
-        >
-        <li>
+    <div id="section-tech" class="grid-skill-tech">
+      <div class="skill-tech">
+        <h3>3D Artist</h3>
+        <ul>
           <a
+            href="https://sites.google.com/view/thyaga/3d-modeling"
+            target="_blank"
+            ><li>3D Modeling</li></a
+          >
+          <a
+            href="https://sites.google.com/view/thyaga/product-design"
+            target="_blank"
+            ><li>Texturing</li></a
+          >
+          <a href="https://sites.google.com/view/thyaga/project" target="_blank"
+            ><li>Rendering</li></a
+          >
+          <li>Shaders</li>
+          <li>Lighting</li>
+          <a
+            href="https://sites.google.com/view/thyaga/3ds-max-vray"
+            target="_blank"
+            ><li>Architectural</li></a
+          >
+          <a href="https://sites.google.com/view/thyaga/autocad" target="_blank"
+            ><li>AutoCAD Drafting</li></a
+          >
+          <li>Photoshop</li>
+        </ul>
+      </div>
+
+      <div class="skill-tech">
+        <h3>Frontend-Developer</h3>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Three.js</li>
+          <li>Web GL</li>
+          <li>Git & Github</li>
+        </ul>
+      </div>
+      <div class="skill-tech">
+        <h3 id="section-project">Projects</h3>
+        <ul>
+          <a href="https://vegadesign.netlify.app/" target="_blank"
+            ><li>Vega Design</li></a
+          >
+          <a href="https://vegatranslate.netlify.app/" target="_blank"
+            ><li>Vega translate</li></a
+          >
+          <li>HTML & CSS</li>
+
+          <a href="https://github.com/thyagarajsalome" target="_blank"
+            ><li>Github</li></a
+          >
+          <a
+            href="https://github.com/thyagarajsalome/Project-04-13"
+            target="_blank"
+            ><li>JavaScript</li></a
+          >
+          <a
+            id="Mock-up"
             href="./images/Web Application- Concept design.webp"
             target="_blank"
-            ><img
-              src="./images/Web Application- Concept design.webp"
-              width="500px"
-              alt=""
-          /></a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <h2 id="section-contact">Contact</h2>
-
-    <div class="contact-container">
-      <div class="social-links">
-        <a href="https://github.com/thyagarajsalome" target="_blank">
-          <img
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-            alt="GitHub Logo"
-            class="social-logo"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/thyagaraja-m-112b84118/"
-          target="_blank"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-            alt="LinkedIn Logo"
-            class="social-logo"
-          />
-        </a>
+            ><li>Mock-up web application</li></a
+          >
+        </ul>
       </div>
     </div>
+    <h3 id="section-contact" class="h3_align">Contact</h3>
+    <!-- contact -->
+    <div class="contact-social-media">
+      <a href="https://github.com/thyagarajsalome" target="_blank"
+        ><img
+          class="social-icon"
+          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+          alt=""
+      /></a>
 
+      <a
+        href="https://www.linkedin.com/in/thyagaraja-m-112b84118/?trk=opento_sprofile_details"
+        target="_blank"
+        ><img
+          class="social-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png"
+          alt=""
+      /></a>
+    </div>
+
+    <!-- Footer -->
     <footer>
+      <p>thyagaraja1983@gmail.com</p>
+
       <p>© Thyagaraja 2024. All rights reserved.</p>
     </footer>
 
-    <script defer src="scripts.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
