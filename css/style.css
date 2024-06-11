@@ -183,6 +183,10 @@ nav {
   color: var(--color-complementary3);
 }
 
+.highlight-text {
+  color: var(--color-complementary3);
+}
+
 /* brand__logos */
 
 .brand__logos {
