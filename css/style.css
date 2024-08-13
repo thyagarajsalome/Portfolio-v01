@@ -140,7 +140,7 @@ nav {
 
 .hero__image {
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 2rem auto 0;
   display: block;
 }
@@ -157,10 +157,7 @@ nav {
     flex: 1;
   }
 
-  .hero__image {
-    flex: 1;
-    margin: 0 0 0 2rem;
-  }
+
 }
 
 /* About */
