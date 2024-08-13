@@ -282,8 +282,10 @@ nav {
 
 /* Footer */
 footer {
+  color: var(--color-complementary3);
+  font-size: medium;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--color-background);
 }
 
