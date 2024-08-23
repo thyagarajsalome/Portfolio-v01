@@ -289,3 +289,7 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
+.contact-text{
+  margin-bottom: 20px;
+}
