@@ -204,6 +204,7 @@ body {
 }
 
 .btn-secondary {
+  margin-top: 10px;
   background-color: #f6f8fa;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
