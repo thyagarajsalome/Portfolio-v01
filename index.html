@@ -17,36 +17,29 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="nav-logo">TM</a>
-          <div class="nav-menu-container">
-            <button class="navbar-toggle" aria-label="Toggle navigation">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <ul class="nav-menu">
-              <li><a href="#home" class="nav-link">Home</a></li>
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#experience" class="nav-link">Experience</a></li>
-              <li><a href="#skills" class="nav-link">Skills</a></li>
-              <li><a href="#projects" class="nav-link">Projects</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+    <nav>
+      <div class="logo">
+        <h1>TM</h1>
       </div>
-    </header>
-
+      <ul id="menuList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
     <main>
       <section id="home" class="hero">
         <div class="container">
-          <h1>3D Artist + Frontend Developer</h1>
+          <h1>Frontend Developer+3D Artist</h1>
+
           <p>
-            HTML | CSS | Javascript | Git & Github | React | Three.js | 3D
-            Application | Ai | AutoCAD | 3ds Max | Vray | Photoshop
+            HTML, CSS, Javascript, React, Three.js, 3D Application, Ai, AutoCAD,
+            3ds Max, Vray, Photoshop
           </p>
           <a href="#contact" class="btn btn-primary">Get in touch</a>
         </div>
@@ -258,7 +251,21 @@
         <p>&copy; 2024 Thyagaraja M. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
 
-    <script src="script.js"></script>
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
