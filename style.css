@@ -87,7 +87,7 @@ body {
 .timeline-item {
   margin-bottom: 2rem;
   padding-left: 2rem;
-  border-left: 2px solid dodgerblue;
+  border-left: 2px solid var(--color-primary);
   position: relative;
 }
 
@@ -96,7 +96,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background-color: dodgerblue;
+  background-color: var(--color-primary);
   border-radius: 50%;
   left: -7px;
   top: 5px;
@@ -185,10 +185,6 @@ body {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-  .navbar-toggle {
-    display: block;
-  }
-
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -208,18 +204,30 @@ body {
 
 .contact-text {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Nav- bar */
+.likdin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* Nav-bar */
 nav {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #004274;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 70px;
+  z-index: 1000;
 }
 
 .logo {
@@ -252,7 +260,7 @@ nav ul li a {
 
 @media (max-width: 600px) {
   nav ul {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     right: 0;
@@ -261,6 +269,7 @@ nav ul li a {
     background: #004274;
     gap: 0;
     overflow: hidden;
+    transition: all 0.5s;
   }
   nav ul li {
     padding: 20px;
@@ -268,8 +277,5 @@ nav ul li a {
   }
   .menu-icon {
     display: block;
-  }
-  #menuList {
-    transition: all 0.5s;
   }
 }
