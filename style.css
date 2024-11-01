@@ -116,8 +116,12 @@ body {
 }
 
 .timeline-item p {
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background: #f6f8fa;
   color: var(--color-secondary);
-  margin-bottom: 0.5rem;
+
+  /* margin-bottom: 0.5rem; */
 }
 
 /* Projects grid */
@@ -210,7 +214,7 @@ body {
   }
 
   .timeline-item {
-    padding-left: 1.5rem;
+    padding-left: 1 rem;
   }
 }
 
