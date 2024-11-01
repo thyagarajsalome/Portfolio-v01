@@ -36,6 +36,7 @@ body {
 }
 
 .hero h1 {
+  color: #6a737d;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -202,6 +203,7 @@ body {
 /* Responsive design */
 @media screen and (max-width: 768px) {
   .hero h1 {
+    color: #6a737d;
     font-size: 2.5rem;
   }
 
@@ -434,4 +436,14 @@ h2 {
   .skill-category {
     padding: 1.2rem;
   }
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  /* border: 1px solid lightgray;
+  background: #f6f8fa;
+  color: var(--color-secondary); */
 }
