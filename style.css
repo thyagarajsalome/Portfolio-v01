@@ -150,11 +150,13 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: #ffffff;
+  background-color: #f6f8fa;
+  border: 1px solid dodgerblue;
+  color: #333;
 }
 
 .btn-primary:hover {
+  color: #fff;
   background-color: #0056b3;
 }
 
