@@ -435,3 +435,13 @@ h2 {
     padding: 1.2rem;
   }
 }
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  /* border: 1px solid lightgray;
+  background: #f6f8fa;
+  color: var(--color-secondary); */
+}
