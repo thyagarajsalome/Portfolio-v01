@@ -447,3 +447,12 @@ h2 {
   background: #f6f8fa;
   color: var(--color-secondary); */
 }
+
+.information {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.information span {
+  color: dodgerblue;
+}
